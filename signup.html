@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="images/favicon.ico" rel="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/signup.css">
+    </head>
+    <body>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+        <img src="images/title2.png" id="gameName">
+
+        <div id="loginBox">
+            <input type="text" placeholder="Username" id="username">
+            <input type="text" placeholder="Email" id="email">
+            <input type="password" placeholder="Password" id="password">
+            <input type="password" placeholder="Confirm password" id="confirmPassword">
+            <button onclick="backToLogin()" id="backToLogin">Back to Login</button>
+            <button onclick="signup()" id="signup">Sign Up</button>
+            <p id="signUpAlert"></p>
+        </div>
+        
+        <video autoplay muted loop id="myVideo">
+            <source src="images/background.mp4" type="video/mp4">
+        </video>
+
+        <script src="js/universalButtons.js"></script>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/signup.js"></script>
+    </body>
+</html>

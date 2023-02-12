@@ -1,0 +1,58 @@
+#gameOverScore {
+    font-size: 4vh;
+    text-align: center;
+}
+
+#heading {
+    color: black;
+    text-align: center;
+    font-size: 8vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30%;
+}
+
+#tryagainbtn {
+    margin: auto;
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 75%;
+}
+
+#tryagainbtn:hover {
+    color: white;
+    background-color: rgb(50, 50, 50);
+}
+
+@media (max-width: 500px) {
+    #heading {
+        color: black;
+        text-align: center;
+        font-size: 8vh;
+        padding: auto 80%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 25%;
+    }
+
+    #tryagainbtn {
+        margin: auto;
+        display: block;
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70%;
+        padding: 20px;
+    }
+}

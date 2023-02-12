@@ -1,0 +1,109 @@
+/* Adapted from: https://www.youtube.com/watch?v=HpOi_tSMAoY */
+
+.aboutTextEaster::before,
+.aboutTextEaster::after {
+    content: attr(data-text);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+#activated {
+    -webkit-text-stroke-width: px;
+    -webkit-text-stroke-color: hotpink;
+        position: absolute;
+        text-align: center ;
+        left:30vw;
+        font-size: 4vh;
+        top:-15vh;
+}
+
+#kevinS,
+#kevinL,
+#jack,
+#fraser,
+#teg {
+    height: 150px;
+}
+
+@media (max-width: 500px) {
+    #aboutText {
+        width: 80%;
+        font-size: 20px;
+        position: absolute;
+        text-align: center;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .aboutTextEaster::before,
+    .aboutTextEaster::after {
+        content: attr(data-text);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        font-size: 20px;
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        z-index: -2;
+    }
+
+    #kevinS,
+    #kevinL,
+    #jack,
+    #fraser,
+    #teg {
+        height: 60px;
+    }
+}
+
+.aboutTextEaster::before {
+    color: #ff00c1;
+    animation: glitch-effect 1s infinite;
+    z-index: -1;
+}
+
+.aboutTextEaster::after {
+    color: #3498db;
+    animation: glitch-effect 1s infinite;
+    top: -3px;
+    left: 3px;
+}
+
+@keyframes glitch-effect {
+    0% {
+        left: -5px;
+        top: -2px;
+    }
+
+    25% {
+        left: 4px;
+        top: 0px;
+    }
+
+    50% {
+        left: -3px;
+        top: 2px;
+    }
+
+    75% {
+        left: 4px;
+        top: -1px;
+    }
+
+    100% {
+        left: 3px;
+        top: -2px;
+    }
+}

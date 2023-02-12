@@ -1,0 +1,19 @@
+@media only screen and (max-width: 700px) {
+    img#bad, img#good {
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (min-width: 701px) {
+    img#bad, img#good {
+        position: absolute;
+        top: 10%;
+        transform: translateY(-30%);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

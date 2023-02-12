@@ -1,0 +1,30 @@
+#countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#timerbar-container {
+    width: 100%;
+    background-color: grey;
+}
+
+#timerbar {
+    position: absolute;
+    bottom: 1%;
+    margin: 5px;
+    width: 95%;
+    height: 7vh;
+    /* the seconds should be the same as the secs in the timerbar function */
+    animation: changeColor 5s forwards;
+    font-size: 6vh;
+    text-align: start;
+    padding-left: 1vw;
+}
+
+@keyframes changeColor {
+    50%   {background-color: green;}
+    75% {background-color: yellow;}
+    100% {background-color: red;}
+}

@@ -1,0 +1,44 @@
+#timer {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    font-family: "Comic Sans MS", cursive, sans-serif;    
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    font-size: 13vh;
+}
+
+#title, #instructions {
+    text-align: center;
+    position: relative;
+}
+
+#instructions {
+    margin: 0px auto 0px auto;
+    top:50vh;
+    display: table;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#title {
+    font-size: 8vh;
+    top:5vh;
+    font-family: "Comic Sans MS", cursive, sans-serif ;
+}
+
+#nextGameScore {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 4vh;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#gameScore {
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-size: 4vh;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}

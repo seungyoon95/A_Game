@@ -1,0 +1,62 @@
+#pauseMenu {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(50,50,50);
+    opacity: 95%;
+    transition-delay: 0.3s;
+    z-index: 5;
+}
+
+#pausebtn {
+    height: 40px;
+    position: absolute;
+    top: 2vh;
+    left: 30px;
+    cursor: pointer;
+    z-index: 1;
+    transform: translateX(-50%);
+}
+
+#menuResume {
+    position: absolute;
+    font-size: 25px;
+    height: 10vh;
+    width: 20vw;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    z-index: 1;
+}
+
+#menuQuit {
+    position: absolute;
+    font-size: 25px;
+    height: 10vh;
+    width: 20vw;
+    padding: 10px;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    border-radius: 14px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    #menuResume {
+        width: 40vw;
+        font-size: 20px;
+    }
+    
+    #menuQuit {
+        width: 40vw;
+        font-size: 20px;
+    }
+}
+

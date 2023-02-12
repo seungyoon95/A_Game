@@ -1,0 +1,79 @@
+#isolationBody {
+    background-size: 100% 100%;
+    background-attachment: fixed;;
+    background-repeat: no-repeat;
+}
+
+#instructions {
+    font-size: 4vw;
+    background-color: white;
+    text-align: center;
+}
+
+#player {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    height: 25vh;
+    width: 13vh;
+    left: 50%;
+    top: 50%;
+}
+
+.enemy1 {
+    position: absolute;
+    transform: translate(0%, -50%);
+    height: 25vh;
+    width: 15vh;
+    transition: right .1s linear;
+}
+
+.enemy2 {
+    position: absolute;
+    transform: translate(0%, -50%);
+    height: 25vh;
+    width: 15vh;
+    transition: left .1s linear;
+}
+
+
+@media (max-width: 800px) {
+    #player {
+        height: 20vh;
+        width: 10vh;
+        
+    }
+    
+    .enemy1 {
+        height: 20vh;
+        width: 10vh;
+        
+    }
+    
+    .enemy2 {
+        height: 20vh;
+        width: 10vh;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    #player {
+        height: 16vh;
+        width: 9vh;
+        
+    }
+    
+    .enemy1 {
+        height: 16vh;
+        width: 9vh;
+        
+    }
+    
+    .enemy2 {
+        height: 16vh;
+        width: 9vh;
+        
+    }
+}
+
+

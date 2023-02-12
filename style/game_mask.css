@@ -1,0 +1,140 @@
+/* Grid for mask image 1. */
+.mask1 {
+    grid-area: "mask1";
+}
+
+/* Grid for mask image 2. */
+.mask2 {
+    grid-area: "mask2";
+}
+
+/* Grid for mask image 3. */
+.mask3 {
+    grid-area: "mask3";
+}
+
+/* Grid for mask image 4. */
+.mask4 {
+    grid-area: "mask4";
+}
+
+/* Grid for mask image 5. */
+.mask5 {
+    grid-area: "mask5";
+}
+
+/* Grid for mask image 6. */
+.mask6 {
+    grid-area: "mask6";
+}
+
+/* Style for mobile view. */
+@media (max-width: 500px) {
+    /* Font size for question and description in mobile view. */
+    #item1 {
+        font-size: small;
+    }
+
+    /* Grid setting for mobile view. */
+    .imageContainer {
+        display: grid;
+        grid-template-areas:
+            "mask1 mask2 mask3"
+            "mask4 mask5 mask6";
+        grid-gap: 5vh;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    /* Images for mobile. */
+    .faceImg,
+    #mask1,
+    #mask2,
+    #mask3,
+    #mask4,
+    #mask5,
+    #mask6 {
+        width: 15vh;
+        height: 15vh;
+    }
+}
+
+/* Styles for tablet view. */
+@media (min-width: 501px) and (max-width: 800px) {
+    /* Font size for question and description in tablet view. */
+    #item1 {
+        font-size: small;
+    }
+
+    /* Grid setting for tablet view. */
+    .imageContainer {
+        display: grid;
+        grid-template-areas:
+            "mask1 mask2 mask3"
+            "mask4 mask5 mask6";
+        grid-gap: 5vh;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    /* Images for tablet. */
+    .faceImg,
+    #mask1,
+    #mask2,
+    #mask3,
+    #mask4,
+    #mask5,
+    #mask6 {
+        width: 20vh;
+        height: 20vh;
+    }
+}
+
+/* Styles for desktop view. */
+@media (min-width: 801px) {
+    /* Font size for question and description in desktop view. */
+    #item1 {
+        font-size: large;
+    }
+
+    /* Grid setting for desktop view. */
+    .imageContainer {
+        display: grid;
+        grid-template-areas:
+            "mask1 mask2 mask3"
+            "mask4 mask5 mask6";
+        grid-gap: 5vh;
+        justify-content: space-evenly;
+        justify-items: center;
+    }
+
+    /* Images for desktop. */
+    .faceImg,
+    #mask1,
+    #mask2,
+    #mask3,
+    #mask4,
+    #mask5,
+    #mask6 {
+        width: 18vh;
+        height: 18vh;
+    }
+}
+
+/* Font for questions and answers in general. */
+#item1 {
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Margin for question and description texts. */ 
+#maskQuestion,
+#maskDescription {
+    margin-top: 1vh;
+}
+
+/* Center aligning the face image and puts a margin below. */
+#face {
+    text-align: center;
+    margin-bottom: 1vh;
+}

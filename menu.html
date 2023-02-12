@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+        <meta property="og:url" content="http://www.kevinsong.info/a_game/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="A_Game" />
+        <meta property="og:description" content="The best game ever question mark" />
+        <meta property="og:image" content="http://www.kevinsong.info/a_game/images/title.png">
+        <link href="images/favicon.ico" rel="icon">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/easterEgg.css">
+        <link rel="stylesheet" href="style/menu.css">
+        <link rel="stylesheet" href="style/leaderboard.css">
+        <link rel="stylesheet" href="style/game_handwash.css">
+        <link rel="stylesheet" href="style/nextGame.css">
+        <link rel="stylesheet" href="style/game_sneeze.css">
+        <link rel="stylesheet" href="style/game_push.css">
+        <link rel="stylesheet" href="style/game_mask.css">
+        <link rel="stylesheet" href="style/game_clap.css">
+        <link rel="stylesheet" href="style/timer.css">
+        <link rel="stylesheet" href="style/game_quiz.css">
+        <link rel="stylesheet" href="style/gameover.css">
+        <link rel="stylesheet" href="style/profile.css">
+        <link rel="stylesheet" href="style/pause.css">
+    </head>
+
+    <body>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.9.2/firebase-firestore.js"></script>
+
+        <!--The API-->
+        <script src="fullscreenAPI\fscreen-master\src\index.js"></script>
+
+        <!-- Other JS -->
+        <script src="js/share.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+            integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+        <script src="js/easteregg.js"></script>
+        <script src="js/game_handwash.js"></script>
+        <script src="js/game_mask.js"></script>
+        <script src="js/game_push.js"></script>
+        <script src="js/game_quiz.js"></script>
+        <script src="js/game_sneeze.js"></script>
+        <script src="js/game_clap.js"></script>
+        <script src="js/game_break.js"></script>
+        <script src="js/game_buttonpress.js"></script>
+        <script src="js/profile.js"></script>
+        <script src="js/pause.js"></script>
+        <script src="js/universalButtons.js"></script>
+        <script src="js/menu.js"></script>
+        <script src="js/leaderboard.js"></script>
+        <script src="js/nextGame.js"></script>
+        <script src="js/timer.js"></script>
+        <script src="js/gameover.js"></script>
+        <script src="js/update_score.js"></script>
+        <script src="js/login.js"></script>
+        <script src="js/fullscreen.js"></script>
+        
+        <div id="soundOverlay">
+            <p id="soundOption">Volume ON!</p>
+            <button onclick="soundOk(); fullScreenMode()" id="soundOk">Ok</button>
+        </div>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="images/background.mp4" type="video/mp4">
+        </video>
+    </body>
+</html>
